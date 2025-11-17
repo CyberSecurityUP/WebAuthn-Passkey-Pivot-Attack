@@ -6,6 +6,6 @@
   "permissions": ["webAuthenticationProxy", "storage"],
   "host_permissions": ["<all_urls>"],
   "background": { "service_worker": "sw.js", "type": "module" },
-  "action": { "default_popup": "popup.html", "default_title": "Id Smarth" }
+  "action": { "default_popup": "popup.html", "default_title": "Webauthn" }
 }
 
