@@ -40,6 +40,12 @@ This PoC requires a browser environment that supports the `chrome.webAuthenticat
     * Initiate the **registration** process. The extension will intercept the call and register its own key.
     * Initiate the **login/authentication** process. The extension will intercept and sign the challenge using the newly registered "Pivot Key."
 
+<img width="652" height="367" alt="Captura de Tela 2025-11-17 às 15 23 45" src="https://github.com/user-attachments/assets/54ab688c-12a9-4eb5-b223-b7857e64053d" />
+
+<img width="1050" height="499" alt="Captura de Tela 2025-11-17 às 15 23 31" src="https://github.com/user-attachments/assets/d94b1c1f-09f3-47f7-8be8-a3bce94df469" />
+
+<img width="732" height="450" alt="Captura de Tela 2025-11-17 às 15 22 53" src="https://github.com/user-attachments/assets/9ff0e023-ba77-46bd-94be-ddafd61bdb57" />
+
 ### 📝 Key Security Takeaways
 
 This PoC highlights the critical risk posed by malicious browser extensions when relying on **Platform Authenticators** (software-based Passkeys).
