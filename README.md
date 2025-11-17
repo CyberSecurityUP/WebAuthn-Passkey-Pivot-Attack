@@ -8,6 +8,9 @@ This tool is for **educational and defensive security research purposes only**. 
 
 ### 🎯 Attack Description
 
+<img width="752" height="357" alt="image" src="https://github.com/user-attachments/assets/63ec54db-5aaf-4796-b2f7-9e12e49aed7d" />
+
+
 The WebAuthn Pivot Attack works in two main phases:
 
 1.  **Registration Pivot (`navigator.credentials.create`):** The extension intercepts the registration request and forges the response. Instead of registering the user's legitimate Passkey (e.g., from a device or platform authenticator), the extension registers a **secret cryptographic key** that it controls (the "Pivot Key"). The PoC uses an ECDSA P-256 key and generates an **Attestation Format "none"** response.
