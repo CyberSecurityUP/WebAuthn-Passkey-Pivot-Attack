@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>WebAuthn Pivot PoC</title>
+<style>
+  body{font:13px system-ui,sans-serif;min-width:300px;padding:12px}
+  button{padding:8px 10px;border-radius:8px}
+  code{background:#f3f3f3;padding:2px 5px;border-radius:4px}
+</style>
+<h3>WebAuthn Pivot PoC</h3>
+<p>Intercepta <code>create/get</code> e usa uma credencial ES256 controlada pela extensão</p>
+<p><button id="reset">Resetar credencial da extensão</button></p>
+<script>
+document.getElementById('reset').onclick = () => {
+  chrome.runtime.sendMessage({cmd:'resetPivot'}, () => alert('Pivot resetado.'));
+};
+</script>
+

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Id Smarth",
+  "version": "1.0.0",
+  "description": "Intercepta WebAuthn e registra/loga uma credencial controlada pela extensão.",
+  "permissions": ["webAuthenticationProxy", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "sw.js", "type": "module" },
+  "action": { "default_popup": "popup.html", "default_title": "Id Smarth" }
+}
+
